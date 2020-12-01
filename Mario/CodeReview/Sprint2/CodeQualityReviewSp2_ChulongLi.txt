@@ -1,0 +1,25 @@
+﻿Author of the code review - Chulong Li
+Date of the code review - 9/19/2018
+Sprint number - 2
+Name of the .cs file being reviewed - QuestionBlock.cs
+Author of the .cs file being reviewed - Wen Che
+
+Specific comments on code review:
+The good structure of Blocks makes her code pretty easy to read, but changing the general variable name into 
+detailed variable name, which can show the meaning of this variable, may be better for the further development.
+The class has a high quality code while there isn't any redundant method or variable.
+
+---------------------------------------------------------------
+
+Author of the code review - Chulong Li
+Date of the code review - 9/24/2018
+Sprint number - 2
+Name of the .cs file being reviewed - QuestionBlockState.cs
+Author of the .cs file being reviewed - Wen Che
+
+Specific comments on code review:
+The overall code is excellent and elegant. By using the abstract class BlockState, it could 
+remove several general methods, like Update and Draw, significantly reducing the code complexity.
+Although some unnecessary using Directive may need to be deleted, they may be used later for 
+futher development. In addition to good structure based on effective variables and methods, the 
+names of both variables and methods meet the requirement of the C# standard naming rule. 

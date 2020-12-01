@@ -1,0 +1,25 @@
+﻿Code Quality Review: HeadsUpDisplayBoard
+
+Author of the code review : Jacob Grove
+Date of the code review: 11-14-18
+Sprint number 5
+Author: Wen Che
+
+Notes:
+
+- there are several internal instances of ITextSprites that the class uses to function. They are all used similarly. 
+This could be refactored using a dictionary and a common method for simplicity, readability, and lower complexity
+
+- this class references many specific instance variables inside of GameObjectManager. It may be best to have the
+ GameObjectManager package this information for you, so this code is flexible to changes in the GameObjectManager
+
+- there are several references to a HUDUtil class (assumedly to remove magic numbers). The main purpose of doing so 
+is to give meaning to these numbers, but their names ("distance", "timeLength",etc) are not specific enough, and further
+may be best imported from a configuration file, so they can be changed easily.
+
+- The formula for placing text seems fit for one window size, perhaps refactor to get window information from the Graphics manager
+
+
+Hypothetical Change:
+- Imagine having to rescale the window size, several of the formulas used to place the HUD elements will not function properly.
+- Adding a new kind of HUD element requires much more work than if all the elements were managed similarly.

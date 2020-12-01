@@ -1,0 +1,22 @@
+Author: Jacob Grove
+Date: Nov 7, 2018
+Sprint 5
+File: Game1.cs
+
+
+What is Readable:
+- the core methods, initialize, draw, update, are generally tight and clean to read
+- its a small class given it drives the program
+- the goal of the class primarily just interfaces with GameObjectManager
+
+What is Not:
+- there is some weird indentation in the class constructor definition
+- "isPause" do you mean when the game is paused. Maybe "isPaused" instead
+- The preferred back buffer dimensions are magic numbers. What is the significance of those numbers?
+- The name "XMLFile1.xml" seems to be the Level file, but the name is nondescriptive
+- A TODO is left in the unload content method. Maybe there needs to be something here else comment removed?
+- A TODO is left in the Drawing code. 
+- The parameters in SpriteBatch.Begin don't have any context. Maybe worth a comment explaining what the statement means
+- The method name "SetInitialValuesCamera" is gramatically odd. Do you mean set the initial values of the camera? if so, why not do this in GameObjectManager.Initialize()?
+- The color of the screen changes based upon the location of mario. Is this an appropriate flow? it's hard to see why this behavior is made this way
+- "ChangeColor" - change the color of what? It also seems to be called every frame? maybe store color information in the camera class. Hard to see why this must be a function of Game1

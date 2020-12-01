@@ -1,0 +1,39 @@
+﻿Author of the code review - Ji Woong Kim
+Date of the code review - 9/19/2018
+Sprint number - 2
+Name of the .cs file being reviewed - NormalMarioLeftJumpState.cs
+Author of the .cs file being reviewed - Xiachen Zong
+Specific comments on code quality:
+
+Class role :
+ When it comes to implementation of state class, it meximizsed the feauture of encapsulation. each state class
+calls the certain methods depending on states in order to improve maintenace. I would like to say these state classes
+are implemnetated well organized. Also it is implemeted to work interactively well with sprite classes. In addition it
+works well with its abstract class without any errors. The one thing I am concerened was it does not implement any 
+abstract method from its abstract class because the abstract class does not have abstract method, but our team have figured
+out that the abstract class will be applied later sprint. 
+
+
+naming :
+ The code is readable and easy to understand. Method names are organzied well done according to the Mario motion changes.
+
+
+
+Author of the code review - Ji Woong Kim
+Date of the code review - 9/24/2018
+Sprint number - 2
+Name of the .cs file being reviewed - MarioState.cs
+Author of the .cs file being reviewed - Xiachen Zong
+
+Specific comments on code quality:
+
+class role :
+  This is abstract code for Mario State process code. this code helps all the mario state code reduce code duplicate,
+ which lowers the code smell. It also makes the system take out the bane. The Draw() method in the this class is reapeted 
+ in every children method, so it helps to reduce duplicate in children classes. 
+
+ naming : 
+ All the methods in the class are named in cohernt with what they do. Just tiny advice for this class is the comments in
+ each method would be better to be changed as 'Needed to be overriden at children class'
+
+

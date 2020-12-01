@@ -1,0 +1,17 @@
+﻿Author: Wen Che
+Date: 11/14/2018
+Sprint Number: 5
+Reviewed File: Projectile.cs
+Author of Reviewed File: XiaoChen & Jacob
+Review Time: 20 min
+
+Specific comments on code quality:
+The file keeps it's good part and it changes some little part based on the eariler suggestion.
+It doesn't have any magic number in there and it doesn't contains any warning. 
+It also doesn't have the quick fixed in there anymore.
+All the methods keep focusing on what it should do and nothing else,
+and the name is good: all the name is clear and be able to show what it contians.
+
+This class is not using a lot but it's a nice example for me if I want to add some new feature into
+the game. The class is clean and short with no too-long sentence nor too-long methods.
+

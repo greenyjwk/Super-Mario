@@ -1,0 +1,39 @@
+Author of the code review - Ji Woong Kim
+Date of the code review - 11/07/2018
+Sprint number - 5
+Name of the .cs file being reviewed - HeadUpdisplayBoard.cs
+Author of the .cs file being reviewed - Wen Che
+Minutes taken: 20
+
+Specific comments on code quality:
+Naming: Good
+- The terms are straightforward and they are easy to understand what they stand for. For that reason, It is
+easy to understand each field is what does in the class.
+
+Explaining and doing what the class should do: Good
+- The class works for output the text on the top of the screen with the infromation in Mario. The logic in drawing
+is similar with the draw method in the sprite class. In addition, the fix text controls the lenght of the text
+considering the space in the screen by using loop.The tiny recommendation for the the class is that, since the logic 
+in draw method is repetitive, put declaration part upward together and put draw process downward together in the signle method would help increase the 
+readability.
+
+
+Author of the code review - Ji Woong Kim
+Date of the code review - 11/14/2018
+Sprint number - 5
+Name of the .cs file being reviewed - HeadUpdisplayBoard.cs
+Author of the .cs file being reviewed - Wen Che
+Minutes taken: 20
+
+Specific comments on code quality:
+Naming: Good
+
+- Naming is straigtforward for readers to read and undrstand depending on the text group meaning differnet
+information. Since the classification of these group according to the meanig, the readers could read through
+more effiicently and easily.
+
+
+Explaining and doing what the class should do: Good
+- The class makes the group the texts depending on the function and position, and then display the each
+texts at the appropriate position. The class splits the method depending on the each different method's function,
+and the texts get new updtated information after each upadate and then shows up at screen such as the sprite.

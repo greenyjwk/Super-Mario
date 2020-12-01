@@ -1,0 +1,21 @@
+﻿Author of the code review - Ji Woong Kim
+Date of the code review - 12/04/2018
+Sprint number - 6
+Name of the .cs file being reviewed -  GameObjectManager.cs
+Author of the .cs file being reviewed - XiaoChen Zong
+Minutes taken: 20
+
+Specific comments on code quality:
+Naming: Good
+- Most of naming is straightorward and easy to understand. The clss deals with many things about initiative
+part of the game. and it chooses the name which is very highly reltaed depending on the functions it supposed
+to do. What I just want to point for tiny revise is, for the CameraMario which is the object for camera interface,
+I would say it would be more meaningful term. 
+ 
+
+Explaining and doing what the class should do: Good
+-The class implements the comprehensive game processes about reltive initiative side. The logic in the method 
+has high cohesion, and each of them stays on the single fucntion. Considering the materials the class implements,
+there are some different various parts for the game process. However, it organiges with timer, soudns and display 
+with less complexity. When it comes to performance, it does not cause errors and the point making game slow due to
+the logic complexity. 

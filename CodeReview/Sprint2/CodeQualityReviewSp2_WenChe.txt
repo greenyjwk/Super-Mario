@@ -1,0 +1,33 @@
+Author of the code review - Wen Che
+Date of the code review - 9/19/2018
+Sprint number - 2
+Name of the .cs file being reviewed - LeftMovingGoombaSprite.cs
+Author of the .cs file being reviewed - ChuLong Li
+Minutes taken: 15
+
+Specific comments on code quality:
+Naming: Good
+- Most of the variables are having reasonable and readable name, it's really easy to tell what that 
+variable does and what class does it belongs and lets the reader be able to know 
+exactly what the variable represent. Including "Frame", "Sheet" really helps.
+The suggestion I would give is to even add the item name into the variable name,
+for example, "currentGoombaFrame". However, since it's already in GoombaSprite class,
+this might be not useful.
+The method name is really good. Simple but clearly shows what each methods are about.
+
+Explaining and doing what the class should do: Good
+-As a small class for the Goomba sprite, it only contains the methods that drawing a 
+sprite requires. Using abstruct class to help cleaning up the code is a great way to
+implement classes. It doesn't have long methods, long class, long line or other code smells 
+that I think will leads to a problem. The code make each methods doing only 1 thing and let
+the class combines the methods to work together for a single uses. Therefore, I think it 
+meets high cohision and low coupling.
+
+Additional notes:
+-The current implementation is using an abstruct class, and it's
+really easy to using the code elsewhere or changing the Goomba into
+some other fetures. The code is highly reuseable and please keep
+doing so for other classes.
+
+
+ 

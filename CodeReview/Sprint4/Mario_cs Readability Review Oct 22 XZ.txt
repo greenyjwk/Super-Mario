@@ -1,0 +1,25 @@
+﻿File: Enemy.cs
+Author of File: Jacob Grove
+Author of Reviewer: Xiaochen Zong
+Sprint 4
+Date: 10-22-18
+Time Spent: 20 mins
+
+
+What is Readable:
+- The Method name is easy to understand. Also, the variables name is easy to understand.
+-The logic is clear and the structure is easy.
+-The property is clear and apporitate.
+
+What is NOT Readable:
+- The order of each methods can be changed to make more easider to read.
+-Some method like IsGoomba, IsKoopa looks not the best way to go. It may be change to enmus and some other method
+It would be better.
+-Plug Physics, if the physics class can be sigleton, it structure will looks good.
+-Some physics method are used in state classes. May be for refractory, we can make them consist.
+
+Overall. The function of the enemy abstract is not bad, it implement many features and make the files looks good.
+However, some suggestion to the file is that the structure can be better baed on the physics. So I think, after we 
+finished our refractory part, we can fix it well.
+
+I think, we need more to imporove and make the class looks better.

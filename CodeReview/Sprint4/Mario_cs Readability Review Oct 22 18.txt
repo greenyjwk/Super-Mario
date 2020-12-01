@@ -1,0 +1,23 @@
+﻿File: Mario.cs
+Author of File: Xiaochen
+Author of Reviewer: Jacob Grove
+Sprint 4
+Date: 10-22-18
+Time Spent: 20 mins
+
+
+What is Readable:
+- MarioMovementState and MarioPowerupState have clear purposes and a division of labor that is usually easy to trace
+- automatic properties (private member with public property) are consistent and legible.
+- the implementations of the boolean functions are straightfoward in their function (though altogether, they result in a fairly large Mario.cs document)
+- the constructor taking a Vector2 as an argument is easily readable for what it is doing in populating the class members
+
+What is NOT Readable:
+-"location" is a private member with a public accessor property called "Position"; that's a little confusing.
+-The Methods: Up, Down, Left, Right, etc aren't specifically clear as to their purpose. it requires some interpretation
+-I can't easily trace the method for jumping logic (it seems to involve "Island" and "fall", but I don't know what these do). Additionally, there are method calls to methods that seem to correspond 1:1 with keyboard input. This may result in some confusing behavior, but at the very least it's hard to trace
+-The calls to the physics member aren't clear as to what their purpose is within Mario.cs. For example, what does "ResetGravity" mean? Isn't gravity always the same, etc?
+-in Dead() -> MarioPowerupState calls a Dead() method, and then the MarioMovementState is set to a Dead state. Why does movement and powerup both have a Dead state? Is this a kind of null pattern; if so it needs to be fleshed out
+-the lines that populate MarioSprite are very challenging to read. It uses the sprite factory to create an ISprite but also asks the MarioFactory for some information. Additionally, the call to the layered dictionary is challenging to parse
+-"Physics" is a generic name given that also describes the class type it is
+-Whether a vector property is accessed as a vector or component-wise is inconsistent. This is an issue across the project as well

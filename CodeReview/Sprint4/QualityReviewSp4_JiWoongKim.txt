@@ -1,0 +1,36 @@
+﻿File: Camera.cs
+Author of File: Che Wen
+Author of Reviewer: Ji Woong Kim
+Sprint 4
+Date: 10-22-18
+Time Spent: 15 mins
+
+
+What is Readable:
+- It is easy to detect abstract picture only with code basis, because the initial point is set as (0,0)
+- naming for variables are very straightforward and easy to understand
+
+What is NOT Readable:
+- As it is mentioned by the author, the magic number would be better to be changed even if the game being implemented 
+is 2 dimensional basis.
+-createTranslation comment for explanation would be helpful for other reveiwers.
+
+
+
+
+Author of the code review - Ji Woong kIm
+Date of the code review - 10/29/2018
+Sprint number - 4
+Name of the .cs file being reviewed - Camera.cs
+Author of the .cs file being reviewed - Che Wen
+Minutes taken: 20
+
+Specific comments on code quality:
+Naming: Good
+ All the name for methods and variables are straighforward and easy to understand 
+
+Logic: Good
+ The code is well organized and written without redundant code for maniplating display for G  ame.
+The only recommendation for this class is, since there are some if statement in here, in order to
+maxizmize the effiecieny of runnig time, short circuit rule might be used. Depending on predicting 
+the high probability among the if statement condition, it would work for maxizming the code effieciency.

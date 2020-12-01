@@ -1,0 +1,27 @@
+File: Enemy.cs
+Author of File: Jacob Grove
+Author of Reviewer: Xiaochen Zong
+Sprint 4
+Date: 10-29-18
+Time Spent: 25 mins
+
+
+What is Readable:
+- The Method name is still easy to understand. Also, the variables is really clear, it can tell what it 
+is managing from the name.
+- It maintains what it does before and make some improvment, now it's more easy to understand.
+
+What is NOT Readable Before:
+- The order of each methods is changed and it's easy to read.
+It goes from basic methods to enemy's own methods.
+
+-I thought that some method like IsGoomba, IsKoopa looks not the best way to go before, but this
+ implementation makes much more sence after we take off all the enums.
+-Physics structure looks good now, it only does what it should do, nothing else and nothing less.
+
+
+Overall, the suggestion I made before are all handled, the class is clear and easy to read,
+it doesn't have long line nor long methods, the class itself is not too long and it only take cares about
+what it should be tracking. 
+
+For now, the Enemy class looks good.

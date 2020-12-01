@@ -1,0 +1,43 @@
+﻿Author: Xiaochen Zong
+Code to be reviewed: Jacob Grove
+Date: Nov 7, 2018
+Sprint 5
+File: CollisionHandlerFractory.cs
+(On the CollisionHandlerFractory Branch )
+
+Comments on Code Readablilty:
+-The name of the each method is readable and easy to know. 
+-The internal class name is easy to understand, we can easily to find the purpose.
+-The interaction method toward two object collision is good to read.
+Suggestions:
+-The naming pattern should be consist, use Carmel or Pascal pattern
+-The name as parameter on the line 41 colhandler should be collisionhandler. 
+-On line 356, the null pointer operation should be NonePointerOperation should be better.
+
+The Overall of the readibablity looks not bad, only some tiny problem on that.I think there should be some changes for 
+the name that make the readibality be better.
+
+This is the refractory part for the mario game. we want to create a new version of Collision, so that is why we missed 
+something on the sprint. We are still working on that and we will make up what we left on refractory.
+
+--------------------------------------------------------
+Quality Code Review
+Author: Xiaochen Zong
+Code to be reviewed: Jacob Grove
+Date: Nov 14, 2018
+Sprint 5
+File: SlideDownFlagDecorator.cs
+
+Code Quality Review:
+- The way to assemble the code is good and easy to understand, the switch combine with the state is good to go.
+-The way to use base.Reset is good and easy logical when Mario come to the end of the game.
+-The way to use decorator for the mario come to the castle is good to go, it reduce lots of work.
+
+Suggestions:
+-The statement in the switch may a little mess, hope it can be revise.
+-In the switch statement it is better to not use IF statement.
+
+Overall, it is good to go. The quality is not bad and the readablility is also good to understand. However, it does not 
+means that it does not have problem, the if case, the logic is good ,however, I think it is not put if statement in the 
+switch statements.
+

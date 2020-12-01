@@ -1,0 +1,38 @@
+﻿Code Review: LevelLoader
+
+Code Readability:
+
+What is Readable:
+- the LoadFile function is very understandable the order and method that the different chunks are loaded in.
+- I can generally understand how each function has one job and doesn't need to know specifics about outside systems
+
+What is NOT Readable:
+- There are some direct state/type comparisons that aren't clear what the precise meaning of is.
+- The code that handles visually filling out a floor block with smaller blocks is hard to trace.
+- There are several different paths for loading a block. Are all of these "blocks" really similar objects. If so, it is hard to tell why.
+- Is a pipe a block?
+- The name findOffset is a verb, and offset of what?
+- What is the reason for certain calculations in the random sequence  generator
+
+
+
+
+
+Code Quality:
+
+Author of the code review : Jacob Grove
+Date of the code review: 12-4-18
+Sprint number 6
+Author: Wen Che
+
+Notes:
+-Much of the code in this document is only superficially different :
+--serializers differ by type (use a dictionary?)
+--Load functions are similar in structure, but maybe handle instantiation and presentation differently. This should be able to be condensed into a small clean method.
+
+-There's a collection called "typeDictionary" at the foot of the file that enables type lookup. I'm not sure what the issue is interrogating the C# type system normally, but that should be resolved, bc there is a lot of overhead with this method.
+-RandomNumber() is hardcoded with 
+
+Hypothetical Change:
+-Add a new type of interface that inherits IGameObject. This would require changes at several points in this file. If all of the functions of the file were generic for any type of game object, this would simplify the code and make it more maintainable
+-Add new kinds of chunks, or change how the randomization occurred. This requires modification of this document which maybe should not handle the random generation aspect. Loading, yes. Randomness, no.

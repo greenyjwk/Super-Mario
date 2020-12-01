@@ -1,0 +1,34 @@
+Author of the code review - Xiaochen Zong
+Date of the code review - 12/04/2018
+Sprint number - 6
+Name of the .cs file being reviewed - GameObjectList.cs
+Author of the .cs file being reviewed - Jacob Grove
+Minutes taken: 40
+
+Readability:
+
+-Make a new data structure, which contains lots of function, quite easy to understand and clear.
+
+-Several methods inside this data structure, which is to go through the list or change the list, 
+each method has a clear name and much easy to understand. It looks professional. 
+
+-Combined several classes that related this data structure, so the readability makes good. 
+Looks really like a official data structure kernel methods. It is good.
+
+-Naming the name of each method and each variable is clear and easy to understand, also the 
+name of the class, it is really easy to understand.
+
+Over all, the code readability is really good, and it is fantastic to make a new game date 
+structure for the list iteration in the collision Detector. 
+
+
+Quality:
+
+-The Quality is also good. Since it use the kernel method design pattern, the logic is clear and the way to 
+call each variable and methods are reasonable. No redundancy.
+
+-Also, the code looks good and the actual function of each method have no redundancy, so it is good on Code quality. 
+
+Overall, the design way it amazing and new to me. Since it use some software knowledge, it is good and really good 
+for the collision refractory.
+

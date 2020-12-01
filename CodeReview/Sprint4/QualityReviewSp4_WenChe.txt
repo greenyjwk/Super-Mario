@@ -1,0 +1,54 @@
+Author of the code review - Wen Che
+Date of the code review - 10/22/2018
+Sprint number - 4
+Name of the .cs file being reviewed - Physics.cs
+Author of the .cs file being reviewed - XiaoChen Zong
+Minutes taken: 20
+
+Specific comments on code quality:
+Naming: Good
+- Methods and variables in the file is named clearly, all the methods are 
+having their name showing what it does and the variable's name is also clear. For example,
+the YVelocity and YVelocityMax. User can tell what value it's tracing by just reading it's 
+name. 
+However, I would recommend having the max X velocity to be positive and have the velocity 
+check only based on the direction Mario faced instead of using positive and negitive numbers.
+Having the max value private is a great way to do it, I would recommend having all the 
+velocity private and have a way to get it's value using some method like GetVelocityValue()
+or something like that. It would be a little better. However, based on the time we have,
+we can move that part into our refactory.
+
+Explaining and doing what the class should do: Good
+-The logic in the methods here is good. All the methods are having one and only one thing
+to deal with, and the class itself is well-designed so that it's not too long and there is no
+unuseful things in here. It also only focus on Physic: it doesn't handle anythingelse instead
+of pluging forces. The way we have for adding force on objects is change it's position during
+update, to fake a "force and gravity" just like what the real world have, but it's good enough
+for now.
+What I would recommend to do for refactory is to have a better way for jump: adding 
+fixed velocity might face some problem, having an acceleration might be a better way.
+
+
+
+Author of the code review - Wen Che
+Date of the code review - 10/29/2018
+Sprint number - 4
+Name of the .cs file being reviewed - Physics.cs
+Author of the .cs file being reviewed - XiaoChen Zong
+Minutes taken: 25
+
+Specific comments on code quality:
+Naming: Good
+The recommendation I made about positive and negative number is better, and I understand that it need to 
+add or subtracut so it's clear now. All the name in the class is clear and reasonable.
+Logic: Good
+Having Mario Physic and other Physic seperate is a good idea for me, although that is not
+what I think at the first time. Mario need to solve much more condition than other
+objects and forcing them to have only one physic is actually going to make repeated and
+not useful codes.
+Seperating grivaty out and having this class only handles with velocity is a great way
+to acheive the functions this game needs. Because after all, we are not really impelmenting
+physic as we have in the real world( or we will need Matrix, force, etc.), so seperating
+grivaty out can make Physic class much clear and easy to read. It doesn't need to 
+know all the other things that is related to the object, but only tracking the velocity.
+

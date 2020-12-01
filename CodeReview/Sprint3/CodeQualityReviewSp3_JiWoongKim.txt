@@ -1,0 +1,37 @@
+﻿Author of the code review - Ji Woong Kim
+Date of the code review - 10/3/2018
+Sprint number - 3
+Name of the .cs file being reviewed -  method CollisionManage in Game1.cs
+Author of the .cs file being reviewed - Wen Che
+
+Specific comments on code quality:
+
+Naming: Good
+- All variables and objects are names well to infrom what they are supposed to work and 
+mean in per each.
+
+Explaining and doing what the class should do: Good
+- CollisionManage method in Game1.cs works very important role which detects the collision between objects
+and makes change location, which are related with collision process. In the further layer, many collision 
+related classes work and update to draw for result of collision, and CollisionManage method works cooperately 
+well with these classes. One tiny suggestion for this method is, CollisionManage method could be splitted to 
+some multiple methods to avoid one long method and to improve readability. 
+
+
+Author of the code review - Ji Woong Kim
+Date of the code review - 10/8/2018
+Sprint number - 3
+Name of the .cs file being reviewed - LevelLoader.cs
+Author of the .cs file being reviewed - Wen Che
+
+Specific comments on code quality:
+
+Naming: Good
+- Naming work is pretty similar with previous code, since the previous code naming have been alreday well defined.
+
+Explaining and doing what the class should do: Good
+- CollisionManage method in Game1.cs works highly realted with the information from the XML file, and also takes care
+of all the collision coming up while the game being played. For this reason, the algorithm for this part takes many codes.
+The previous code has LevelLoader method in Game1.cs class as a method type. However, the change (making an additional class 
+rather than using a method) makes the Game1.cs class smaller so that it can lessen the the Game1.cs responsibility, make it 
+easier to maintain and improve the readibility. 

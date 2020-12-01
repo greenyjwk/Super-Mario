@@ -1,0 +1,31 @@
+Author of the code review - Wen Che
+Date of the code review - 12/04/2018
+Sprint number - 6
+Name of the .cs file being reviewed - MiniBoss.cs
+Author of the .cs file being reviewed - XiaoChen Zong
+Minutes taken: 40
+
+Readability:
+
+Specific comments on code quality:
+Naming: Good
+- Naming in this class is good. Since this class is an extention of enemy class, it basically use
+the base that from the enemy class, which makes it short and clean and really easy to read. 
+The variable, health, is the variable that keeps how many "hit" the mini boss can take. This is a 
+name that is really easy to understand what it means and what that variable contains.
+
+Explaining and doing what the class should do: Good
+-The logic in the methods here is really clear. The methods that are contained in this class 
+are the methods mini boss needed, but not all the methods enemy class has. Although it basically 
+override the methods from enemy class, it is still clean and it doesn't have any necessary methods.
+Other functions that doesn't need to be in this class are build in separate class that supporting 
+this class.
+
+Quality:
+
+Specific comments on code quality:
+There is no magic number in this class and it doesn't contains any warning. 
+It also doesn't have the quick fixed, the whole class is nicely impelmented.
+
+All the methods keep focusing on what it should do and nothing else, no super long line nor 
+long sentence.It is also easy to reuse and easy to add new functions in.

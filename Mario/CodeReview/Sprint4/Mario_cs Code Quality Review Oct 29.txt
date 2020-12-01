@@ -1,0 +1,29 @@
+﻿Author: Jacob Grove
+Date: Oct 29, 2018
+Sprint 4
+File: Mario.cs
+
+Comments on Code Quality:
+
+-MarioMovementState and MarioPowerupState go a long way to avoiding state explosion, but may also miss an opportunity to abstract out state related features for other kinds of future players
+-There is some repeated code relating to what seems to be updating the sprite, and it is difficult to trace.
+-There are two try/catch statements that dont seem to field anything at runtime. are they necessary?
+-Mario has his own method of using physics. The method for jumping, landing and navigating via Physics is very different than compared to other kinds of objects in the game. This may cause problems later.
+-In the constructor, there is specific information regarding the initial state of mario, which could be left up to the factory so that Mario stays as small and ignorant a class as possible
+-Movement horizontally in the air and on the ground take wildly different paths to cause an effect. It would be best if these were similarly performed for future development.
+-There are many bool functions that simply ask what mario's state is, when his state is publicly exposed. It would be best to do a direct comparison if all the bool methods do is make a direct comparison.
+-There is inconsistency when it comes to naming functions. "Is" is a prefix to functions that return a bool and ask a question, as well as functions that handle an event under certain conditions. This creates larger complexity.
+
+Suggestions:
+
+-Redesign mario's method of jumping so that it can be made more standard across other things that jump.
+-Create a uniform method of horizontal input when it comes to movement
+-Remove functions that ask the type of a public member. Directly compare against type of public member
+-Reference Movement and Powerup states by their interface, so they may be swapped out with a state using different strategies
+-Remove SetContainsItem if it has no functionality.
+-Let MarioFactory handle details of initial mario states
+-Rename functions that begin with "Is", for example:
+	- Is<function> when you need to determine if something is true
+	- On<function> if a function should occur when a certain condition/event is met
+	- or directly acess a bool member if you mean to set it either true or false
+	- (these are just some examples, be sure to be consistent either way)

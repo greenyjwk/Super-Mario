@@ -1,0 +1,36 @@
+Author of the code review - Xiaochen Zong
+Date of the code review - 9/19/2018
+Sprint number - 2
+Name of the .cs file being reviewed - NormalMarioDeadSprite.cs
+Author of the .cs file being reviewed - Ji Woong Kim
+
+Specific comments on code quality:
+The sprite for mario works well, the code are readable and meaningful. The whole work looks good, one thing 
+that I should mention is that it is better to delete some code in Draw() class since of our picture
+has already been cut well, no need for frame. Above all the code looks good and easy to understand.
+
+-------------------------------------------------------------------------------------------------------------------
+
+Author of the code review -Xiaochen Zong
+Date of the code review - 9/24/2018
+Sprint number - 2
+Name of the .cs file being reviewed - NormalMarioDeadSprite.cs
+Author of the .cs file being reviewed - Ji Woong Kim
+Minutes taken: 15
+Specific comments on code quality:
+
+Class role :
+	Overall, the code looks good. By using the abstract class, it allows the whole code looks 
+	clean and concise. Most of the things were put in the abstract class. So it much easier to maintain. 
+	So I really like the style. Also, the naming style was cool and good to go. They are all meaningful name, 
+	so, they are easy to read the maintenance. So I really like the code style. They are all readable and maintainable.
+	There are not too many problems in this .cs file. It is loose coupling and high cohesion. By using abstract, 
+	it extracts the Update() and Draw() to abstract classes.
+	No duplicated code, no long class and also no long method. So, it is good to refractory.
+
+ Naming:
+	The naming work looks also good. I they are meaningful and useful. Each name can reflect its own work in this class,
+	So, I like this way to go.
+ Additional notes:
+    Overall, the whole design of the .cs file is really good, extremely less code smell and it is really good for futher
+	project to use.

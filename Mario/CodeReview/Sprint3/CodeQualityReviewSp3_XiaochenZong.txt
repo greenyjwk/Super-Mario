@@ -1,0 +1,42 @@
+﻿Author of the code review - Xiaochen Zong
+Date of the code review - 10/03/2018
+Sprint number - 3
+Name of the .cs file being reviewed - StarMarioLeftCrouchState.cs
+Author of the .cs file being reviewed - Ji Woong Kim
+Specific comments on code quality:
+
+Review:
+Naming: Good.
+This is a basic Star mario part that similar with super Mario. The behaviors are all same. However, there is some different, since we add Mario motion 
+in Sprint3. In this case, we need some tiny change.
+Overall, the code quality is not bad. It is easy to read and understand. So, there is no big problem. First, I know that he writes the motion in the 
+command, then he write it to Mario class. These are all not good idea. At last, under TA and I help, he finally implements the Mario motion in 
+state classes. That is a good start.
+This state class strictly follow the state pattern and add location--/++ to in some state change. That is good. Also, it also solves the diagonal 
+moving problem. That is good enough. So, the code quality is not bad, and the readability is also good.
+
+Advise:
+Although the code is not bad, there is still some advice. The method order looks little messy and not that easy to find method 
+in this class. Hope he can revise the order in the future work.
+
+
+
+Author of the code review - Xiaochen Zong
+Date of the code review - 10/08/2018
+Sprint number - 3
+Name of the .cs file being reviewed - StarMarioLeftCrouchState.cs
+Author of the .cs file being reviewed - Ji Woong Kim
+Specific comments on code quality:
+
+Review:
+Naming: Good.
+For this part, no need too much to revise, since the original work is not bad. One of the problems is that the order of 
+each method looks really mess, Ji also recognized that and revised it in the refractory part. So, now the method in this 
+class looks clearer and logic.
+
+State pattern is a basic part for every project, since many classes need it. (You can check the reference number). So, 
+it is really important to let every team member s to know how the state pattern works. Not only in collision, also the 
+sprite, and the following decorator pattern. So, the readability is really important in this part.
+
+So, hope Ji can continue do the work like this, then all the other members can easily understand how the state pattern 
+works. It will improve the efficient of our project.

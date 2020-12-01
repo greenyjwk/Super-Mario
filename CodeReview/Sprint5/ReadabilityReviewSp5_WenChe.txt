@@ -1,0 +1,21 @@
+Author of the code review - Wen Che
+Date of the code review - 11/07/2018
+Sprint number - 5
+Name of the .cs file being reviewed - Projectile.cs
+Author of the .cs file being reviewed - XiaoChen Zong & Jacob
+Minutes taken: 20
+
+Specific comments on code quality:
+Naming: Good
+- Naming is sometimes the issue we need to take care of, since we usually just make a easy name 
+for variables to test and forgot to change it. This file is a good example of how we should 
+name each variables and methods. I would like to see this type of naming all across our project.
+All the methods are having their name showing what it does and the variable's name is also clear.
+ 
+However, I would recommend having all the things that are using {get;set} to start with upper
+case. That's the small naming rules we sometimes forget.
+
+Explaining and doing what the class should do: Good
+-The logic in the methods here is clear and simple. The methods only deals with one goals and
+the class is clean. But, there are some quick fixed codes( throw new NotImplementedException) and
+there should be some better way to fix that. Having methods like "IsAssignable" would helps.

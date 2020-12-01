@@ -1,0 +1,39 @@
+Author of the code review - Wen Che
+Date of the code review - 10/03/2018
+Sprint number - 3
+Name of the .cs file being reviewed - CollisionDetecter.cs
+Author of the .cs file being reviewed - XiaoChen Zong
+Minutes taken: 20
+
+Specific comments on code quality:
+Naming: Good
+- For most of the methods and variables in the file, it's clearly making sense and shows what it
+should be doing in the code. Variables are using lower case and for Field or methods, they all
+ follows the naming rules.
+Explaining and doing what the class should do: Good
+-The logic in the methods here is really clear: first check if it's having collision, then check if it's
+up/down collision or left/right collision. Then, return the type with enum value for furture use in 
+other classes.
+The thing I like about this code is that it only does one thing together as a whole class: It doesn't
+care who it's testing, when it happened, but only cares about what it should be focues on: whethere
+there is a collision or not. Classes like this is what I want to have in our project.
+The downside of this code is that, whenever there is a nested if statement, there should always be 
+a better way to write it. This is the part we might need to spend time on during refactory.
+
+Author of the code review - Wen Che
+Date of the code review - 10/08/2018
+Sprint number - 3
+Name of the .cs file being reviewed - CollisionDetecter.cs
+Author of the .cs file being reviewed - XiaoChen Zong
+Minutes taken: 15
+
+Specific comments on code quality:
+Naming: Good
+-Variables are now is a much better shape: using static or isntance variables based on the meaning of it,
+and it's much easier to understand why and how they are being called or used in classes since the type of 
+variables and name is well designed.
+Explaining and doing what the class should do: Good
+-The logic in the methods is still clear and nice, and, after pointing out the problem of nested if loops, 
+it is fixed by Xiaochen. Now it's more easy to understand and the logic in it is much easier to follow based
+on only the code, and it still only does what it should do: test about whether there is a collision or not.
+Classes like this is what I want to have in our project.
